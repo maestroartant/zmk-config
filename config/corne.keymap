@@ -24,6 +24,15 @@
 
     combos { compatible = "zmk,combos"; };
 
+    macros {
+        prntscrn: prntscrn {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <>;
+            label = "PRNTSCRN";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -50,10 +59,10 @@
             //                     | GUI |     | ALT/ENT |   | HYPER/SPACE | BKSP |    |
 
             bindings = <
-&kp PRINTSCREEN  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT       &kp CARET                   &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSLH
-&kp NUMBER_4     &kp N1    &kp N2  &kp N3    &kp N4    &kp N5          &kp MINUS                   &kp EQUAL  &kp GRAVE        &kp LBKT  &kp RBKT  &kp PIPE
-&kp LSHFT        &kp N6    &kp N7  &kp N8    &kp N9    &kp N0          &kp UNDER                   &kp PLUS   &kp TILDE        &kp LBRC  &kp RBRC  &kp RSHFT
-                                   &kp LGUI  &trans    &tp LALT RET    &tp LC(LS(LA(LGUI))) SPACE  &kp BSPC   &trans
+&kp LG(LS(S))  &kp EXCL  &kp AT  &kp HASH  &kp DLLR  &kp PRCNT    &kp CARET                   &kp AMPS   &kp KP_MULTIPLY  &kp LPAR  &kp RPAR  &kp BSLH
+&kp NUMBER_4   &kp N1    &kp N2  &kp N3    &kp N4    &kp N5       &kp MINUS                   &kp EQUAL  &kp GRAVE        &kp LBKT  &kp RBKT  &kp PIPE
+&kp LSHFT      &kp N6    &kp N7  &kp N8    &kp N9    &kp N0       &kp UNDER                   &kp PLUS   &kp TILDE        &kp LBRC  &kp RBRC  &kp RIGHT_ALT
+                                 &trans    &trans    &trans       &tp LC(LS(LA(LGUI))) SPACE  &kp BSPC   &trans
             >;
         };
 
