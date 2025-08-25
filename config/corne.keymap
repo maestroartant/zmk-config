@@ -22,14 +22,21 @@
         };
     };
 
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        macros {
+            bindings = <&to 4>;
+            key-positions = <38 39>;
+        };
+    };
 
     macros {
-        prntscrn: prntscrn {
+        emoji_heart: emoji_heart {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <>;
-            label = "PRNTSCRN";
+            bindings = <&kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp DOT &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp COMMA &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp DOT &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp SPACE &kp EXCL>;
+            label = "EMOJI_HEART";
         };
     };
 
@@ -87,6 +94,15 @@
 &trans      &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp NUMBER_4  &kp NUMBER_5    &kp LEFT  &kp DOWN  &kp UP  &kp RIGHT  &trans   &trans
 &bt BT_CLR  &kp NUMBER_6  &kp NUMBER_7  &kp NUMBER_8  &kp NUMBER_9  &kp NUMBER_0    &trans    &trans    &trans  &trans     &trans   &trans
                                         &trans        &trans        &trans          &trans    &trans    &trans
+            >;
+        };
+
+        layer_4 {
+            bindings = <
+&to 0   &trans  &trans  &trans  &trans  &trans    &emoji_heart  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &trans  &trans  &trans  &trans  &trans
+                        &trans  &trans  &trans    &trans        &trans  &trans
             >;
         };
     };
