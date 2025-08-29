@@ -77,7 +77,7 @@
             bindings = <
 &kp LG(LS(S))  &kp EXCL    &kp AT      &kp HASH     &kp DLLR       &kp PRCNT    &kp CARET                   &kp AMPS   &kp KP_MULTIPLY  &kp LPAR       &kp RPAR  &kp LEFT_BRACKET
 &kp ENTER      &kp DELETE  &kp INSERT  &kp PAGE_UP  &kp PAGE_DOWN  &kp N5       &kp MINUS                   &kp EQUAL  &kp GRAVE        &kp BACKSLASH  &kp RBKT  &kp SQT
-&kp LG(V)      &kp N6      &kp N7      &kp N8       &kp N9         &kp N0       &kp UNDER                   &kp PLUS   &kp TILDE        &kp LBRC       &kp RBRC  &kp RIGHT_ALT
+&kp LG(V)      &kp N6      &kp N7      &kp N8       &kp N9         &kp N0       &kp UNDER                   &kp PLUS   &kp TILDE        &kp LBRC       &kp RBRC  &kp DOUBLE_QUOTES
                                        &trans       &trans         &trans       &tp LC(LS(LA(LGUI))) SPACE  &kp BSPC   &kp PIPE
             >;
         };
